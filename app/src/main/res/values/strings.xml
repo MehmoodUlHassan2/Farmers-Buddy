@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Farmer Buddy</string>
+    <string name="amt_N_in">Enter N amount:</string>
+    <string name="total_amt_text">Enter your total area:</string>
+
+    <string-array name="area">
+        <item>Acre</item>
+<!--        <item>1000 ft^2</item>-->
+
+    </string-array>
+
+    <string-array name="totalsize">
+        <item>Acre(s)</item>
+        <item>ft^2</item>
+
+    </string-array>
+    <string name="Values">
+        "Please enter your fertilizer values"
+    </string>
+    <string name="rate">
+        Input your application rate:
+    </string>
+    <string name="rate2">
+        lbs per
+    </string>
+    <string name="totalArea">
+        Input your total area:
+    </string>
+    <string name="calc_N">
+        Nitrogen
+    </string>
+    <string name="calc_P">
+        Phosphorus
+    </string>
+    <string name="calc_K">
+        Potassium
+    </string>
+    <string name="title">
+        Fertilizer Calculator
+    </string>
+    <string name="action_search">Search</string>
+</resources>

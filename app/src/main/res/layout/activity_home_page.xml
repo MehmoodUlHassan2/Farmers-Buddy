@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--        One Item-->
+        <androidx.cardview.widget.CardView
+            android:onClick="videosTutorials"
+            android:layout_weight=".50"
+            card_view:cardElevation="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            card_view:cardBackgroundColor="@color/some_color"
+            card_view:cardCornerRadius="20dp"
+            card_view:contentPadding="5dp">
+            <LinearLayout
+                android:background="@drawable/card_view_back"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@drawable/video_tutorials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="Video Tutorials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        One Item-->
+        <!--        One Item-->
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="10dp"
+            android:onClick="blogTutorials"
+            android:layout_weight=".50"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp">
+            <LinearLayout
+                android:background="@drawable/card_view_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight=".50"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@drawable/blogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="Blogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        One Item-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--        One Item-->
+        <androidx.cardview.widget.CardView
+            android:onClick="queries"
+            android:layout_weight=".50"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp">
+            <LinearLayout
+                android:background="@drawable/card_view_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight=".50"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@drawable/questions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="Queries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        One Item-->
+        <!--        One Item-->
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="10dp"
+            android:onClick="fertilizerCalculator"
+            android:layout_weight=".50"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp">
+            <LinearLayout
+                android:background="@drawable/card_view_back"
+                android:orientation="vertical"
+                android:layout_weight=".50"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp">
+                <ImageView
+                    android:src="@drawable/calculator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="Calculator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        One Item-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--        One Item-->
+    <androidx.cardview.widget.CardView
+        android:onClick="weatherUpdates"
+        android:layout_weight=".50"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:background="@drawable/card_view_back"
+            android:orientation="vertical"
+            android:layout_weight=".50"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp">
+            <ImageView
+                android:src="@drawable/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="Weather Updates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--        One Item-->
+</LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

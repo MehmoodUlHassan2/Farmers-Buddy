@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e8f4f8"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <ImageView
+        android:src="@drawable/weather"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:text="Weather Update"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_weight="1"
+                android:textColor="#37CA8F"
+                android:background="@drawable/edit_d"
+                android:padding="12dp"
+                android:textColorHint="#37CA8F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCity"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Enter City Name"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGet"
+                android:background="#37CA8F"
+                android:textColor="@android:color/white"
+                android:onClick="getWeatherDetails"
+                android:text="Get"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <TextView
+                android:textSize="22dp"
+                android:textColor="#37CA8F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvResult" />
+        </ScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </View>
+
+    </LinearLayout>
+</LinearLayout>

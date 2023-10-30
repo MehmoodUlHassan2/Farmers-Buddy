@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:weightSum="1"
+    android:background="@drawable/card_view_back"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:elevation="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewQueryQuestion"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Video 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:background="@drawable/back"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/textViewQueryAnswer"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:text="Video 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.recyclerview.widget.RecyclerView
+        android:clickable="false"
+        android:layout_weight="1"
+        android:id="@+id/query_ans_reviews_idServiceUsersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="bottom"
+        android:elevation="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="showDailogHereQuery"
+                android:text="Add Your Answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
